@@ -5,10 +5,20 @@
 * @c: digit to find the last place of.
 * Return: The last digit.
 */
-int print_last_digit(int c)
+int print_last_digit(int n)
 {
-	if (c < 0)
-		c = c * -1;
-	_putchar((c % 10) + '0');
-	return (c % 10);
+	int nv;
+
+	if (n < 0)
+	{
+		nv = -1 * (n % 10);
+		_putchar(nv + '0');
+		return (nv);
+	}
+	else
+	{
+		nv = n % 10;
+		_putchar(nv + '0');
+		return (nv);
+	}
 }
