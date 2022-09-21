@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
 * *_strncat - appends the src string to the dest string
 *
