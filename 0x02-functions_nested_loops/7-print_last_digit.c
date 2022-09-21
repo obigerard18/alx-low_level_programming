@@ -2,8 +2,8 @@
 
 /**
 * print_last_digit - prints the last digit of a numer.
-* @c: digit to find the last place of.
-* Return: The last digit.
+* @n: digit to find the last place of.
+* Return: return value of last digit
 */
 int print_last_digit(int n)
 {
