@@ -1,36 +1,35 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* *cap_string - capitalizes all words of a string
+* cap_string - capitalizes all words of a string
+* @str: the string to change the first letter of a word in uppercase
 *
-* @a: int to check
-*
-* Return: 0 is success
+* Return: capitalizes letters
 */
-char *cap_string(char *a)
+char *cap_string(char *str)
 {
-	int x;
+	int i;
+	int j;
+	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 
-	for (x = 0; a[x] != '\0'; x++)
+	i = 0;
+
+	while (str[i] != '\0')
 	{
-		if (x == 0)
+		if (i == 0 && str[i] >= 97 && str[i] <= 122)
 		{
-		if (a[x] >= 'a' && a[x] <= 'z')
+			str[i] = str[i] - 32;
+		}
+		j = 0;
+		while (c[j] != '\0')
 		{
-				a[x] = a[x] - 32;
+			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
+			{
+				str[i + 1] = str[i + 1] - 32;
+			}
+			j++;
 		}
-		}
-		if (a[x] == ' ' || a[x] == '\n' || a[x] == ','
-			|| a[x] == '\t' || a[x] == ';' || a[x] == '.'
-			|| a[x] == '!' || a[x] == '?'
-			|| a[x] == '"' || a[x] == '(' || a[x] == ')'
-			|| a[x] == '{' || a[x] == '}')
-		{
-				if (a[x + 1] >= 'a' && a[x + 1] <= 'z')
-				{
-					a[x + 1] = a[x + 1] - 32;
-				}	
-		}
+		i++;
 	}
-			return (a);
+	return (str);
 }
