@@ -16,12 +16,12 @@ char *rot13(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-												j = 0;
+		j = 0;
 		while (alpha[j] != '\0')
 		{
-													if (str[i] == alpha[j])
+			if (str[i] == alpha[j])
 			{
-														str[i] = rot[j];
+				str[i] = rot[j];
 				break;
 			}
 			j++;
