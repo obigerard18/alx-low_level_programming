@@ -1,38 +1,32 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
-* rot13 - encodes a string using rot13 encryption
-* @s: a pointer given by main
-* 
-* Description: change all alpha characters by rot13 rules
-* Return: returns the s pointer
+* rot13 - encodes a string using rot13
+* @str: the string to encode
+*
+* Return: encode string
 */
-
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	int i = 0;
-	int j;
-	int begin[] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
-					'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A',
-					'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-					'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-	int end[] = {'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y',
-						'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'N', 'O',
-						'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'A', 'B', 'C', 'D', 'E',
-						'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'};
+	int i, j;
 
-	while (s[i] != 0)
+	char alpha[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-												for (j = 0; j < 52; j++)
-												{
-													if (s[i] == begin[j])
-													{
-				s[i] = end[j];
+												j = 0;
+		while (alpha[j] != '\0')
+		{
+													if (str[i] == alpha[j])
+			{
+														str[i] = rot[j];
 				break;
 			}
+			j++;
 		}
 		i++;
 	}
-	return (s);
+	return (str);
 }
