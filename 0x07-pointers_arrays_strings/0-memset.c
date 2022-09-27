@@ -1,8 +1,8 @@
 #include "main.h"
 #include <string.h>
-
 /**
 * _memset - fills memory with a constant byte
+*
 * @s: char to check
 * @b: char to check
 * @n: unsigned int to check
@@ -11,6 +11,11 @@
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	memset(s, b, n);
+	unsigned int a;
+
+	for (a = 0; a < n; a++)
+	{
+		s[a] = b;
+	}
 	return (s);
 }
