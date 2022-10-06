@@ -37,5 +37,6 @@ int *array_range(int min, int max)
 	/* so runner < positions, less than the size of the range of numbers */
 	/* runner ascend in the same measure that min keeps ascending */
 	for (runner = 0; runner < positions; runner++, min++)
-		newarray[runner] = min;							return (newarray);
+		newarray[runner] = min;							
+	return (newarray);
 }
