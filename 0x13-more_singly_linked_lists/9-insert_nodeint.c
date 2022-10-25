@@ -12,29 +12,38 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *newnode;
 	unsigned int size;
 
-	size = 0;	
-
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+	size = ;
+	/* allocate memory for the newnode */	
+	newnode = malloc(sizeof(listint_t));
+	/* task condition */
+	if (newnode == NULL)
 		return (NULL);
-	new->n = n;
+	/* n keeps being the data of the new node */
+	newnode->n = n;
+	/*  given the case, if index is cero then newnode is equal to head */
+	/* and return newnode in head of the list */
 	if (idx == 0)
 	{
-		new->next = *head;
-		*head = new;
-		return (new);
+		newnode->next = *head;
+		*head = newnode;
+		return (newnode);
 	}
-	for (i = 0; aux; ++i)
+	/* usea de auxiliar */
+	headaux = *head;
+	/* if index is different to the position */
+	/* counter size keeps running and headaux moves to the next node */
+	while (headaux != NULL && size != idx - 1)
 	{
-		if (i == idx - 1)
-		{
-			new->next = aux->next;
-			aux->next = new;
-			return (new);
-		}
-		aux = aux->next;
+		size++;
+		headaux = headaux->next;
 	}
-	free(new);
+	/* if index and size are equal and non NULL */
+	if (size == idx - 1 && headaux != NULL)
+	{
+		newnode->next = headaux->next;
+		headaux->next = newnode;
+		return (newnode);
+	}
+	free(newnode);
 	return (NULL);
-insert_nodeint_at_index - inserts a new node at a given position}
 }
