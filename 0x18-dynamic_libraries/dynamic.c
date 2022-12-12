@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
 * _putchar - prints char
 * @c: char to print
@@ -8,7 +6,7 @@
 
 int _putchar(char c)
 {
-	return (1);
+return (1);
 }
 /**
 * _islower - prints char
@@ -18,7 +16,7 @@ int _putchar(char c)
 
 int _islower(int c)
 {
-	return (1);
+return (1);
 }
 /**
 * _isalpha - prints char
@@ -28,7 +26,7 @@ int _islower(int c)
 
 int _isalpha(int c)
 {
-	return (1);
+return (1);
 }
 /**
 * _abs - prints char
@@ -38,7 +36,7 @@ int _isalpha(int c)
 
 int _abs(int n)
 {
-	return (1);
+return (1);
 }
 /**
 * _isupper - prints char
@@ -48,7 +46,7 @@ int _abs(int n)
 
 int _isupper(int c)
 {
-	return (1);
+return (1);
 }
 /**
 * _isdigit - prints char
@@ -58,7 +56,7 @@ int _isupper(int c)
 
 int _isdigit(int c)
 {
-	return (1);
+return (1);
 }
 /**
 * _strlen - prints char
@@ -68,7 +66,7 @@ int _isdigit(int c)
 
 int _strlen(char *s)
 {
-	return (1);
+return (1);
 }
 /**
 * _puts - prints char
@@ -78,7 +76,7 @@ int _strlen(char *s)
 
 void _puts(char *s)
 {
-	return (1);
+return (1);
 }
 /**
 * _strcpy - prints char
@@ -89,7 +87,7 @@ void _puts(char *s)
 
 char *_strcpy(char *dest, char *src)
 {
-	return (1);
+return (1);
 }
 /**
 * _atoi - prints char
@@ -99,7 +97,7 @@ char *_strcpy(char *dest, char *src)
 
 int _atoi(char *s)
 {
-	return (1);
+return (1);
 }
 /**
 * _strcat - prints char
@@ -110,7 +108,7 @@ int _atoi(char *s)
 
 char *_strcat(char *dest, char *src)
 {
-	return (1);
+return (1);
 }
 /**
 * *_strncat - prints char
@@ -122,7 +120,7 @@ char *_strcat(char *dest, char *src)
 
 char *_strncat(char *dest, char *src, int n)
 {
-	return (1);
+return (1);
 }
 /**
 * *_strncpy - prints char
@@ -134,7 +132,7 @@ char *_strncat(char *dest, char *src, int n)
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	return (1);
+return (1);
 }
 /**
 * _strcmp - prints char
@@ -145,7 +143,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 int _strcmp(char *s1, char *s2)
 {
-	return (1);
+return (1);
 }
 /**
 * *_memset - prints char
@@ -157,7 +155,7 @@ int _strcmp(char *s1, char *s2)
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	return (1);
+return (1);
 }
 /**
 * *_memcpy - prints char
@@ -169,7 +167,7 @@ char *_memset(char *s, char b, unsigned int n)
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	return (1);
+return (1);
 }
 /**
 * *_strchr - prints char
@@ -180,7 +178,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 char *_strchr(char *s, char c)
 {
-	return (1);
+return (1);
 }
 /**
 * _strspn - prints char
@@ -191,7 +189,7 @@ char *_strchr(char *s, char c)
 
 unsigned int _strspn(char *s, char *accept)
 {
-	return (1);
+return (1);
 }
 /**
 * *_strpbrk - prints char
@@ -202,7 +200,7 @@ unsigned int _strspn(char *s, char *accept)
 
 char *_strpbrk(char *s, char *accept)
 {
-	return (1);
+return (1);
 }
 /**
 * *_strstr - prints char
@@ -213,5 +211,5 @@ char *_strpbrk(char *s, char *accept)
 
 char *_strstr(char *haystack, char *needle)
 {
-	return (1);
+return (1);
 }
